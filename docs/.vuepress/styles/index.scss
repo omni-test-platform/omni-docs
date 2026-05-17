@@ -23,16 +23,15 @@ html.dark {
   --c-text-lighter: #a0a0a0;
 }
 
-// Navbar: match omni-web style
+// Navbar: logo + site name in brand color
 .vp-navbar {
   .logo {
-    height: 32px;
+    height: 28px;
     vertical-align: middle;
   }
   .vp-site-name {
     color: var(--c-brand) !important;
-    font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
