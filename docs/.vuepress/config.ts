@@ -118,9 +118,21 @@ export default defineUserConfig({
         },
       },
       '/v1.1.3/': {
+        selectLanguageName: '简体中文',
         navbar: [
           { text: '首页', link: '/' },
         ],
+        sidebar: {
+          '/v1.1.3/': [
+            {
+              text: 'v1.1.3',
+              collapsible: false,
+              children: [
+                '/v1.1.3/README.md',
+              ],
+            },
+          ],
+        },
       },
     },
   }),
