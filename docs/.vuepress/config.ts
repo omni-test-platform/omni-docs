@@ -24,8 +24,8 @@ export default defineUserConfig({
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
   ],
   theme: defaultTheme({
-    logo: '/omni-logo.svg',
-    logoDark: '/omni-logo-dark.svg',
+    logo: '/omni-icon.svg',
+    logoDark: '/omni-icon.svg',
     locales: {
       '/': {
         navbar: [
