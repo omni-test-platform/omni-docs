@@ -10,11 +10,17 @@
   --c-badge-tip: #646cff;
   --c-badge-warning: #faad14;
   --c-badge-danger: #f5222d;
+
+  // Navbar text colors matching omni-platform
+  --c-text: #1f1f1f;
+  --c-text-light: #4a4a4a;
+  --c-text-lighter: #666666;
 }
 
-// Custom block styling
-.custom-block.tip {
-  border-color: var(--c-brand);
+html.dark {
+  --c-text: #e0e0e0;
+  --c-text-light: #c0c0c0;
+  --c-text-lighter: #a0a0a0;
 }
 
 // Navbar: hide site name text, show only logo

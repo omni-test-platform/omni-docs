@@ -21,7 +21,7 @@ export default defineUserConfig({
     },
   },
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}omni-logo.svg` }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
   ],
   theme: defaultTheme({
     logo: '/omni-logo.svg',
