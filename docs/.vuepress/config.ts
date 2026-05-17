@@ -4,7 +4,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 
-const base = (process.env.VUEPRESS_BASE as string) || '/'
+const base = ((process.env.VUEPRESS_BASE as string) || '/') as '/' | `/${string}/`
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -153,6 +153,51 @@ export default defineUserConfig({
               collapsible: false,
               children: [
                 '/v1.1.3/README.md',
+              ],
+            },
+          ],
+          '/v1.1.3/deployment/': [
+            {
+              text: '安装部署',
+              collapsible: false,
+              children: [
+                '/v1.1.3/deployment/README.md',
+              ],
+            },
+          ],
+          '/v1.1.3/quickstart/': [
+            {
+              text: '快速上手',
+              collapsible: false,
+              children: [
+                '/v1.1.3/quickstart/README.md',
+              ],
+            },
+          ],
+          '/v1.1.3/guide/': [
+            {
+              text: '使用指南',
+              collapsible: false,
+              children: [
+                '/v1.1.3/guide/README.md',
+              ],
+            },
+          ],
+          '/v1.1.3/plugins/': [
+            {
+              text: '插件',
+              collapsible: false,
+              children: [
+                '/v1.1.3/plugins/README.md',
+              ],
+            },
+          ],
+          '/v1.1.3/development/': [
+            {
+              text: '二次开发',
+              collapsible: false,
+              children: [
+                '/v1.1.3/development/README.md',
               ],
             },
           ],
