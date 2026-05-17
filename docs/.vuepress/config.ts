@@ -42,6 +42,15 @@ export default defineUserConfig({
           },
         ],
         sidebar: {
+          '/v1.0/': [
+            {
+              text: 'v1.0',
+              collapsible: false,
+              children: [
+                '/v1.0/README.md',
+              ],
+            },
+          ],
           '/v1.0/quickstart/': [
             {
               text: '快速上手',
