@@ -22,11 +22,15 @@ export default defineUserConfig({
     logo: null,
     locales: {
       '/': {
-        navbar: [],
+        navbar: [
+          { text: '首页', link: '/' },
+        ],
         sidebar: {},
       },
       '/v1.0/': {
-        navbar: [],
+        navbar: [
+          { text: '首页', link: '/' },
+        ],
         sidebar: {},
       },
     },
