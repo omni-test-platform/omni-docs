@@ -5,6 +5,10 @@ node_modules/
 # Build output
 dist/
 
+# VuePress generated
+docs/.vuepress/.cache/
+docs/.vuepress/.temp/
+
 # IDE
 .idea/
 *.iml

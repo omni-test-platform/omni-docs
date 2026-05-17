@@ -1,19 +1,28 @@
 {
   "name": "omni-docs",
   "version": "1.0.0",
+  "private": true,
   "description": "Omni test platform documentation site",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "clean": "vuepress dev docs --clean-cache"
+    "clean": "vuepress dev docs --clean-cache --clean-temp"
   },
   "license": "ISC",
   "packageManager": "pnpm@10.33.2",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.30",
     "@vuepress/plugin-search": "2.0.0-rc.130",
     "@vuepress/plugin-shiki": "2.0.0-rc.130",
     "@vuepress/theme-default": "2.0.0-rc.130",
+    "sass-embedded": "^1.99.0",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.7",
     "vuepress": "2.0.0-rc.30"
   }
 }
