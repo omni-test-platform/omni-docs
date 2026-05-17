@@ -26,8 +26,9 @@ VUEPRESS_BASE="$BASE_PATH" pnpm build
 # 2. 创建 gh-pages 分支内容
 echo ""
 echo "=== 2. 准备 gh-pages 分支 ==="
+BUILD_SRC="docs/.vuepress/dist"
 BUILD_DIR=$(mktemp -d)
-cp -r dist/* "$BUILD_DIR/"
+cp -r "$BUILD_SRC"/* "$BUILD_DIR/"
 cd "$BUILD_DIR"
 
 git init

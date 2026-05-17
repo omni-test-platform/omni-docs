@@ -28,7 +28,7 @@ jobs:
 
       - name: Deploy to gh-pages
         run: |
-          cd dist
+          cd docs/.vuepress/dist
           git init
           git config user.name "Gitee Bot"
           git config user.email "bot@omni-platform"
