@@ -12,11 +12,11 @@ export default defineUserConfig({
   base,
   locales: {
     '/': {
-      title: 'Omni 测试平台',
+      title: '测试平台',
       description: '一站式测试平台在线文档',
     },
     '/v1.0/': {
-      title: 'Omni 测试平台 - v1.0',
+      title: '测试平台 - v1.0',
       description: 'v1.0 文档',
     },
   },

@@ -1,7 +1,7 @@
 ---
 home: true
 title: Omni 测试平台
-heroText: Omni 测试平台
+heroText: 测试平台
 tagline: 一站式测试平台在线文档
 actions:
   - text: 快速上手

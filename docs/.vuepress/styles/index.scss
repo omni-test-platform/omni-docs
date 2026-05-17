@@ -23,16 +23,15 @@ html.dark {
   --c-text-lighter: #a0a0a0;
 }
 
-// Navbar: hide site name text, show only logo
-.site-name {
-  display: none !important;
-}
-
-// Style navbar logo (full SystemLogo SVG with wordmark)
+// Navbar: logo + site name in brand color
 .navbar {
   .logo {
     height: 28px;
     vertical-align: middle;
+  }
+  .site-name {
+    color: var(--c-brand) !important;
+    font-weight: 600;
   }
 }
 
