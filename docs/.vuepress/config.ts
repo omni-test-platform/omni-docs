@@ -133,11 +133,11 @@ export default defineUserConfig({
         selectLanguageName: '简体中文',
         navbar: [
           { text: '首页', link: '/' },
-          { text: '安装部署', link: '/v1.1.2/deployment/' },
-          { text: '快速上手', link: '/v1.1.2/quickstart/' },
-          { text: '使用指南', link: '/v1.1.2/guide/' },
-          { text: '插件', link: '/v1.1.2/plugins/' },
-          { text: '二次开发', link: '/v1.1.2/development/' },
+          { text: '安装部署', link: '/v1.1.3/deployment/' },
+          { text: '快速上手', link: '/v1.1.3/quickstart/' },
+          { text: '使用指南', link: '/v1.1.3/guide/' },
+          { text: '插件', link: '/v1.1.3/plugins/' },
+          { text: '二次开发', link: '/v1.1.3/development/' },
           {
             text: 'v1.1.3',
             children: [
