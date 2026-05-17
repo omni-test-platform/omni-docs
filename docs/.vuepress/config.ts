@@ -26,6 +26,7 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: '/omni-logo.svg',
     logoDark: '/omni-logo-dark.svg',
+    selectLanguageText: false,
     locales: {
       '/': {
         navbar: [
