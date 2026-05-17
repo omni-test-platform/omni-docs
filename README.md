@@ -67,14 +67,22 @@ server {
 
 ```
 docs/
-├── .vuepress/          # VuePress 配置
-│   ├── config.ts       # 主配置
-│   ├── styles/         # 自定义样式
-│   └── public/         # 静态资源
-├── v1.0/               # v1.0 版本文档
-│   ├── quickstart/     # 快速上手
-│   ├── guide/          # 使用指南
-│   ├── plugins/        # 插件
-│   └── development/    # 二次开发
-└── README.md           # 站点首页
+├── .vuepress/            # VuePress 配置
+│   ├── config.ts         # 主配置
+│   ├── client.ts         # 客户端增强
+│   ├── styles/           # 自定义样式
+│   └── public/           # 静态资源
+├── v1.1.2/               # v1.1.2 版本文档
+│   ├── deployment/       # 安装部署
+│   ├── quickstart/       # 快速上手
+│   ├── guide/            # 使用指南
+│   ├── plugins/          # 插件
+│   └── development/      # 二次开发
+├── v1.1.3/               # v1.1.3 版本文档（敬请期待）
+│   ├── deployment/
+│   ├── quickstart/
+│   ├── guide/
+│   ├── plugins/
+│   └── development/
+└── README.md             # 站点首页
 ```
