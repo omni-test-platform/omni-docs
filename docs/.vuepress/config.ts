@@ -122,6 +122,17 @@ export default defineUserConfig({
         selectLanguageName: '简体中文',
         navbar: [
           { text: '首页', link: '/' },
+          { text: '快速上手', link: '/v1.1.2/quickstart/' },
+          { text: '使用指南', link: '/v1.1.2/guide/' },
+          { text: '插件', link: '/v1.1.2/plugins/' },
+          { text: '二次开发', link: '/v1.1.2/development/' },
+          {
+            text: 'v1.1.3',
+            children: [
+              { text: 'v1.1.2', link: '/v1.1.2/' },
+              { text: 'v1.1.3 (当前)', link: '/v1.1.3/' },
+            ],
+          },
         ],
         sidebar: {
           '/v1.1.3/': [
