@@ -1,0 +1,18 @@
+@use 'vars';
+
+:root {
+  // Override VuePress default theme colors with Omni palette
+  --c-brand: #646cff;
+  --c-brand-light: #8b92ff;
+  --c-brand-dark: #535bf2;
+
+  // Badge colors
+  --c-badge-tip: #646cff;
+  --c-badge-warning: #faad14;
+  --c-badge-danger: #f5222d;
+}
+
+// Custom block styling
+.custom-block.tip {
+  border-color: var(--c-brand);
+}
