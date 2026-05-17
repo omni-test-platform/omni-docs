@@ -34,7 +34,7 @@ export default defineUserConfig({
           { text: '插件', link: '/v1.1.2/plugins/' },
           { text: '二次开发', link: '/v1.1.2/development/' },
           {
-            text: 'v1.1.2',
+            text: '选择版本',
             children: [
               { text: 'v1.1.2 (当前)', link: '/v1.1.2/' },
               { text: 'v1.1.3(敬请期待)', link: '/v1.1.3/' },
