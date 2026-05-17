@@ -15,40 +15,30 @@ pnpm dev
 pnpm build
 ```
 
-构建产物输出到 `dist/` 目录。
+构建产物输出到 `docs/.vuepress/dist/` 目录。
 
 ## 部署
 
-### Gitee Pages（推荐）
+### Cloudflare Pages
 
-1. 在 Gitee 仓库页面进入「服务 > Gitee Pages」
-2. 部署分支选择 `gh-pages`，部署目录选择 `/`（根目录）
-3. 点击「启动」完成部署
+#### 方式一：Git 集成（推荐）
 
-> 每次更新文档后，运行 `./deploy.sh` 即可自动构建并更新部署。
+1. 将代码推送到 GitHub 仓库
+2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Pages**
+3. 点击 **Create a project** → **Connect to Git**
+4. 选择 GitHub 仓库，配置构建设置：
+   - **Build command**: `pnpm build && pnpm build`
+   - **Build output directory**: `docs/.vuepress/dist`
+5. 点击 **Save and Deploy**
 
-### CI/CD 自动部署
+每次推送 `master` 分支，Cloudflare Pages 会自动构建部署。
 
-仓库已配置 Gitee Go 工作流（`.gitee/workflows/build.yml`），当推送 `master` 分支时自动执行：
-
-1. 安装依赖并构建
-2. 将构建产物推送到 `gh-pages` 分支
-3. Gitee Pages 自动更新
-
-**启用方式：**
-1. 在 Gitee 仓库「管理 > Gitee Go」中激活 CI
-2. 在「设置 > 密钥管理」中添加 `GITEE_TOKEN` 密钥（Personal Access Token）
-3. 推送 `master` 分支即可触发自动构建部署
-
-### 自定义域名
-
-如果使用自定义域名：
+#### 方式二：Wrangler CLI
 
 ```bash
-VUEPRESS_BASE=/ ./deploy.sh
+npm install -g wrangler
+wrangler pages deploy docs/.vuepress/dist --project-name=omni-docs
 ```
-
-并在 Gitee Pages 设置中配置自定义域名。
 
 ## 目录结构
 
