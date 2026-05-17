@@ -29,6 +29,7 @@ export default defineUserConfig({
         selectLanguageName: '简体中文',
         navbar: [
           { text: '首页', link: '/' },
+          { text: '安装部署', link: '/v1.1.2/deployment/' },
           { text: '快速上手', link: '/v1.1.2/quickstart/' },
           { text: '使用指南', link: '/v1.1.2/guide/' },
           { text: '插件', link: '/v1.1.2/plugins/' },
@@ -47,6 +48,7 @@ export default defineUserConfig({
         selectLanguageName: '简体中文',
         navbar: [
           { text: '首页', link: '/' },
+          { text: '安装部署', link: '/v1.1.2/deployment/' },
           { text: '快速上手', link: '/v1.1.2/quickstart/' },
           { text: '使用指南', link: '/v1.1.2/guide/' },
           { text: '插件', link: '/v1.1.2/plugins/' },
@@ -66,6 +68,15 @@ export default defineUserConfig({
               collapsible: false,
               children: [
                 '/v1.1.2/README.md',
+              ],
+            },
+          ],
+          '/v1.1.2/deployment/': [
+            {
+              text: '安装部署',
+              collapsible: false,
+              children: [
+                '/v1.1.2/deployment/README.md',
               ],
             },
           ],
@@ -122,6 +133,7 @@ export default defineUserConfig({
         selectLanguageName: '简体中文',
         navbar: [
           { text: '首页', link: '/' },
+          { text: '安装部署', link: '/v1.1.2/deployment/' },
           { text: '快速上手', link: '/v1.1.2/quickstart/' },
           { text: '使用指南', link: '/v1.1.2/guide/' },
           { text: '插件', link: '/v1.1.2/plugins/' },

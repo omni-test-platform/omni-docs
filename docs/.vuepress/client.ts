@@ -8,11 +8,9 @@ export default defineClientConfig({
 
     function updateVersionLabel() {
       const path = route.path
-      let label = '选择版本'
+      let label = 'v1.1.2'
       if (path.startsWith('/v1.1.3')) {
-        label = 'v1.1.3(敬请期待)'
-      } else if (path.startsWith('/v1.1.2')) {
-        label = 'v1.1.2'
+        label = 'v1.1.3'
       }
 
       document.querySelectorAll('.vp-navbar-dropdown-wrapper').forEach(wrapper => {
