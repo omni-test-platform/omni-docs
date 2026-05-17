@@ -5,10 +5,10 @@ heroText: 测试平台
 tagline: 一站式测试平台在线文档
 actions:
   - text: 快速上手
-    link: /v1.0/quickstart/
+    link: /v1.1.2/quickstart/
     type: primary
   - text: 使用指南
-    link: /v1.0/guide/
+    link: /v1.1.2/guide/
     type: secondary
 features:
   - title: 快速开始

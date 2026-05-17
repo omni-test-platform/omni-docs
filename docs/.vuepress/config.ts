@@ -15,9 +15,9 @@ export default defineUserConfig({
       title: '测试平台',
       description: '一站式测试平台在线文档',
     },
-    '/v1.0/': {
-      title: '测试平台 - v1.0',
-      description: 'v1.0 文档',
+    '/v1.1.2/': {
+      title: '测试平台 - v1.1.2',
+      description: 'v1.1.2 文档',
     },
   },
   head: [
@@ -30,87 +30,87 @@ export default defineUserConfig({
       '/': {
         navbar: [
           { text: '首页', link: '/' },
-          { text: '快速上手', link: '/v1.0/quickstart/' },
-          { text: '使用指南', link: '/v1.0/guide/' },
-          { text: '插件', link: '/v1.0/plugins/' },
-          { text: '二次开发', link: '/v1.0/development/' },
+          { text: '快速上手', link: '/v1.1.2/quickstart/' },
+          { text: '使用指南', link: '/v1.1.2/guide/' },
+          { text: '插件', link: '/v1.1.2/plugins/' },
+          { text: '二次开发', link: '/v1.1.2/development/' },
           {
-            text: 'v1.0',
+            text: 'v1.1.2',
             children: [
-              { text: 'v1.0 (当前)', link: '/v1.0/' },
+              { text: 'v1.1.2 (当前)', link: '/v1.1.2/' },
             ],
           },
         ],
         sidebar: {},
       },
-      '/v1.0/': {
+      '/v1.1.2/': {
         navbar: [
           { text: '首页', link: '/' },
-          { text: '快速上手', link: '/v1.0/quickstart/' },
-          { text: '使用指南', link: '/v1.0/guide/' },
-          { text: '插件', link: '/v1.0/plugins/' },
-          { text: '二次开发', link: '/v1.0/development/' },
+          { text: '快速上手', link: '/v1.1.2/quickstart/' },
+          { text: '使用指南', link: '/v1.1.2/guide/' },
+          { text: '插件', link: '/v1.1.2/plugins/' },
+          { text: '二次开发', link: '/v1.1.2/development/' },
           {
-            text: 'v1.0',
+            text: 'v1.1.2',
             children: [
-              { text: 'v1.0 (当前)', link: '/v1.0/' },
+              { text: 'v1.1.2 (当前)', link: '/v1.1.2/' },
             ],
           },
         ],
         sidebar: {
-          '/v1.0/': [
+          '/v1.1.2/': [
             {
-              text: 'v1.0',
+              text: 'v1.1.2',
               collapsible: false,
               children: [
-                '/v1.0/README.md',
+                '/v1.1.2/README.md',
               ],
             },
           ],
-          '/v1.0/quickstart/': [
+          '/v1.1.2/quickstart/': [
             {
               text: '快速上手',
               collapsible: false,
               children: [
-                '/v1.0/quickstart/README.md',
-                '/v1.0/quickstart/create-test.md',
-                '/v1.0/quickstart/configuration.md',
+                '/v1.1.2/quickstart/README.md',
+                '/v1.1.2/quickstart/create-test.md',
+                '/v1.1.2/quickstart/configuration.md',
               ],
             },
           ],
-          '/v1.0/guide/': [
+          '/v1.1.2/guide/': [
             {
               text: '使用指南',
               collapsible: false,
               children: [
-                '/v1.0/guide/README.md',
-                '/v1.0/guide/test-case.md',
-                '/v1.0/guide/test-suite.md',
-                '/v1.0/guide/test-execution.md',
-                '/v1.0/guide/report.md',
+                '/v1.1.2/guide/README.md',
+                '/v1.1.2/guide/test-case.md',
+                '/v1.1.2/guide/test-suite.md',
+                '/v1.1.2/guide/test-execution.md',
+                '/v1.1.2/guide/report.md',
               ],
             },
           ],
-          '/v1.0/plugins/': [
+          '/v1.1.2/plugins/': [
             {
               text: '插件',
               collapsible: false,
               children: [
-                '/v1.0/plugins/README.md',
-                '/v1.0/plugins/official.md',
-                '/v1.0/plugins/custom.md',
+                '/v1.1.2/plugins/README.md',
+                '/v1.1.2/plugins/official.md',
+                '/v1.1.2/plugins/custom.md',
               ],
             },
           ],
-          '/v1.0/development/': [
+          '/v1.1.2/development/': [
             {
               text: '二次开发',
               collapsible: false,
               children: [
-                '/v1.0/development/README.md',
-                '/v1.0/development/architecture.md',
-                '/v1.0/development/api.md',
-                '/v1.0/development/contribution.md',
+                '/v1.1.2/development/README.md',
+                '/v1.1.2/development/architecture.md',
+                '/v1.1.2/development/api.md',
+                '/v1.1.2/development/contribution.md',
               ],
             },
           ],
