@@ -9,3 +9,4 @@ title: 二次开发
 - [架构说明](./architecture.md) — 了解平台整体架构
 - [API 文档](./api.md) — 开放 API 接口参考
 - [贡献指南](./contribution.md) — 参与平台开发
+- [方案设计](./design.md) — 平台整体方案设计文档
