@@ -17,28 +17,16 @@ pnpm build
 
 构建产物输出到 `docs/.vuepress/dist/` 目录。
 
-## 部署
+## 部署（GitHub Pages）
 
-### Cloudflare Pages
+仓库已配置 GitHub Actions 工作流，推送 `master` 分支后自动构建并部署。
 
-#### 方式一：Git 集成（推荐）
+1. 在 GitHub 仓库 **Settings → Pages** 中设置：
+   - **Source**: Deploy from a branch
+   - **Branch**: `gh-pages` / `/ (root)`
+2. 推送 `master` 分支即可触发自动部署
 
-1. 将代码推送到 GitHub 仓库
-2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Pages**
-3. 点击 **Create a project** → **Connect to Git**
-4. 选择 GitHub 仓库，配置构建设置：
-   - **Build command**: `pnpm build && pnpm build`
-   - **Build output directory**: `docs/.vuepress/dist`
-5. 点击 **Save and Deploy**
-
-每次推送 `master` 分支，Cloudflare Pages 会自动构建部署。
-
-#### 方式二：Wrangler CLI
-
-```bash
-npm install -g wrangler
-wrangler pages deploy docs/.vuepress/dist --project-name=omni-docs
-```
+部署地址：`https://<你的组织>.github.io/omni-docs/`
 
 ## 目录结构
 

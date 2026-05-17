@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to GitHub Pages
 on:
   push:
     branches:
@@ -7,7 +7,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
+    concurrency:
+      group: pages
     steps:
       - uses: actions/checkout@v4
 
@@ -24,9 +26,11 @@ jobs:
 
       - name: Build
         run: pnpm build
+        env:
+          VUEPRESS_BASE: /omni-docs/
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy docs/.vuepress/dist --project-name=omni-docs
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vuepress/dist
