@@ -30,6 +30,16 @@ export default defineUserConfig({
       '/': {
         navbar: [
           { text: '首页', link: '/' },
+          { text: '快速上手', link: '/v1.0/quickstart/' },
+          { text: '使用指南', link: '/v1.0/guide/' },
+          { text: '插件', link: '/v1.0/plugins/' },
+          { text: '二次开发', link: '/v1.0/development/' },
+          {
+            text: 'v1.0',
+            children: [
+              { text: 'v1.0 (当前)', link: '/v1.0/' },
+            ],
+          },
         ],
         sidebar: {},
       },
