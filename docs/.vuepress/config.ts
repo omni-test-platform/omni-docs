@@ -26,7 +26,7 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: '/omni-logo.svg',
     logoDark: '/omni-logo-dark.svg',
-    selectLanguageText: false,
+    selectLanguageText: '选择语言',
     locales: {
       '/': {
         navbar: [
@@ -39,6 +39,7 @@ export default defineUserConfig({
             text: 'v1.1.2',
             children: [
               { text: 'v1.1.2 (当前)', link: '/v1.1.2/' },
+              { text: 'v1.1.3', link: '/v1.1.2/' },
             ],
           },
         ],
@@ -55,6 +56,7 @@ export default defineUserConfig({
             text: 'v1.1.2',
             children: [
               { text: 'v1.1.2 (当前)', link: '/v1.1.2/' },
+              { text: 'v1.1.3', link: '/v1.1.2/' },
             ],
           },
         ],
