@@ -16,3 +16,52 @@
 .custom-block.tip {
   border-color: var(--c-brand);
 }
+
+// Navbar: hide site name text, show only logo icon
+.site-name {
+  display: none !important;
+}
+
+// Style navbar logo like omni-web
+.navbar {
+  .logo {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+  }
+}
+
+// Homepage hero: match omni-web clean style
+.home {
+  .hero {
+    .hero-image {
+      max-height: 120px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--c-brand);
+    }
+    .description {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .action-button {
+      border-radius: 6px;
+      padding: 0.6em 1.8em;
+      font-weight: 600;
+      &.primary {
+        background: var(--c-brand);
+        border-color: var(--c-brand);
+        &:hover {
+          background: var(--c-brand-dark);
+        }
+      }
+    }
+  }
+  .feature {
+    h2 {
+      font-weight: 600;
+    }
+  }
+}

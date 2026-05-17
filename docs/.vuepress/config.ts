@@ -20,8 +20,12 @@ export default defineUserConfig({
       description: 'v1.0 文档',
     },
   },
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}omni-logo.svg` }],
+  ],
   theme: defaultTheme({
-    logo: null,
+    logo: '/omni-logo.svg',
+    logoDark: '/omni-logo-dark.svg',
     locales: {
       '/': {
         navbar: [
