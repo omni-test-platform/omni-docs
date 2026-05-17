@@ -23,6 +23,7 @@ export default defineUserConfig({
     logo: '/omni-logo.svg',
     logoDark: '/omni-logo-dark.svg',
     selectLanguageText: '选择语言',
+    contributors: false,
     locales: {
       '/': {
         selectLanguageName: '简体中文',
