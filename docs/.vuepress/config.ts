@@ -4,10 +4,12 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 
+const base = (process.env.VUEPRESS_BASE as string) || '/'
+
 export default defineUserConfig({
   bundler: viteBundler(),
   lang: 'zh-CN',
-  base: '/',
+  base,
   locales: {
     '/': {
       title: 'Omni 测试平台',

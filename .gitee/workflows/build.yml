@@ -1,0 +1,37 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+        env:
+          VUEPRESS_BASE: /omni-docs/
+
+      - name: Deploy to gh-pages
+        run: |
+          cd dist
+          git init
+          git config user.name "Gitee Bot"
+          git config user.email "bot@omni-platform"
+          git add -A
+          git commit -m "deploy: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push -f https://${{ secrets.GITEE_TOKEN }}@gitee.com/omni-platform/omni-docs.git HEAD:gh-pages
