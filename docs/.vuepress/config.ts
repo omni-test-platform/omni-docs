@@ -29,6 +29,7 @@ export default defineUserConfig({
     selectLanguageText: '选择语言',
     locales: {
       '/': {
+        selectLanguageName: '简体中文',
         navbar: [
           { text: '首页', link: '/' },
           { text: '快速上手', link: '/v1.1.2/quickstart/' },
@@ -46,6 +47,7 @@ export default defineUserConfig({
         sidebar: {},
       },
       '/v1.1.2/': {
+        selectLanguageName: '简体中文',
         navbar: [
           { text: '首页', link: '/' },
           { text: '快速上手', link: '/v1.1.2/quickstart/' },
