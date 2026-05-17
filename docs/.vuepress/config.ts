@@ -85,9 +85,9 @@ export default defineUserConfig({
           children: [
             '/v1.1.2/development/README.md',
             '/v1.1.2/development/architecture.md',
+            '/v1.1.2/development/design.md',
             '/v1.1.2/development/api.md',
             '/v1.1.2/development/contribution.md',
-            '/v1.1.2/development/design.md',
           ],
         },
       ],
