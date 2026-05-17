@@ -15,10 +15,6 @@ export default defineUserConfig({
       title: '测试平台',
       description: '一站式测试平台在线文档',
     },
-    '/v1.1.2/': {
-      title: '测试平台 - v1.1.2',
-      description: 'v1.1.2 文档',
-    },
   },
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
@@ -40,7 +36,7 @@ export default defineUserConfig({
             text: 'v1.1.2',
             children: [
               { text: 'v1.1.2 (当前)', link: '/v1.1.2/' },
-              { text: 'v1.1.3', link: '/v1.1.2/' },
+              { text: 'v1.1.3(敬请期待)', link: '/v1.1.3/' },
             ],
           },
         ],
@@ -58,7 +54,7 @@ export default defineUserConfig({
             text: 'v1.1.2',
             children: [
               { text: 'v1.1.2 (当前)', link: '/v1.1.2/' },
-              { text: 'v1.1.3', link: '/v1.1.2/' },
+              { text: 'v1.1.3(敬请期待)', link: '/v1.1.3/' },
             ],
           },
         ],
@@ -120,6 +116,11 @@ export default defineUserConfig({
             },
           ],
         },
+      },
+      '/v1.1.3/': {
+        navbar: [
+          { text: '首页', link: '/' },
+        ],
       },
     },
   }),
