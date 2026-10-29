@@ -1,0 +1,1 @@
+var e=`/omni-docs/assets/milestone-B77FTp_t.jpg`;export{e as t};

@@ -1,0 +1,1 @@
+var e=`/omni-docs/assets/home-C6a6YPtR.jpg`;export{e as t};
